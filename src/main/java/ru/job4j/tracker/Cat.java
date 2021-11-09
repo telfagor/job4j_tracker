@@ -1,7 +1,7 @@
 package ru.job4j.tracker;
 
 public class Cat {
-    private String name = "Барсик";
+    private String name;
     private String food;
 
     public void eat(String meal) {
@@ -13,6 +13,18 @@ public class Cat {
     }
 
     public void show() {
-        System.out.println(name + "ел " + food);
+        System.out.println(name + " ел " + food);
+    }
+
+    public static void main(String[] args) {
+        Cat mursik = new Cat();
+        mursik.giveNick("Mursik");
+        mursik.eat("рыбу");
+        mursik.show();
+
+        Cat barsik = new Cat();
+        barsik.giveNick("Barsik");
+        barsik.eat("котлетку");
+        barsik.show();
     }
 }

@@ -7,14 +7,18 @@ public class Battery {
         this.load = load;
     }
 
-    public void exchange(Battery another, int charges) {
-        load -= charges;
-        another.load += charges;
+    public void exchange(Battery another) {
+        another.load += load;
+        load -= load;
     }
 
-    public static void main(String[] args) {
-        Battery first = new Battery(100);
-        Battery second = new Battery(50);
-        first.exchange(second, 30);
+    public int getLoad() {
+        return load;
     }
+
+//    public static void main(String[] args) {
+//        Battery first = new Battery(100);
+//        Battery second = new Battery(50);
+//        first.exchange(second);
+//    }
 }

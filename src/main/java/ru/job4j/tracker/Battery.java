@@ -9,7 +9,7 @@ public class Battery {
 
     public void exchange(Battery another) {
         another.load += load;
-        this.load -= this.load;
+        this.load = 0;
     }
 
     public int getLoad() {

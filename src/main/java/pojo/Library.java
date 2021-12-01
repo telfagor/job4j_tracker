@@ -16,5 +16,8 @@ public class Library {
         for (int i = 0; i < books.length; i++) {
             System.out.println(books[i].getName() + " " + books[i].getCount());
         }
+        for (int i = 0; i < book4.getCount(); i++) {
+            System.out.println(book4.getName() + " " + books[i].getCount());
+        }
     }
 }

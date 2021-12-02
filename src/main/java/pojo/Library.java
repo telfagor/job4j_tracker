@@ -18,8 +18,8 @@ public class Library {
         }
         for (int i = 0; i < books.length; i++) {
             String nameOfBook = books[i].getName();
-            if (nameOfBook.equals("Clean Code")) {
-                System.out.println(nameOfBook + books[i].getCount());
+            if ("Clean Code".equals(nameOfBook)) {
+                System.out.println(nameOfBook + " " + books[i].getCount());
             }
         }
     }

@@ -16,7 +16,7 @@ public class Matches {
             } else if (count == 2) {
                 System.out.println(player + " can take 1 or 2 matches");
             } else {
-                System.out.println(player + " can take only 1 matches");
+                System.out.println(player + " can take only 1 match");
             }
             int matches = Integer.parseInt(scanner.nextLine());
             if (matches >= 1 && matches <= Math.min(3, count)) {

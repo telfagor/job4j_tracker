@@ -11,17 +11,12 @@ public class Matches {
         while (count > 0) {
             System.out.println("On the table are " + count + " matches");
             String player = turn ? "First player" : "Second player";
-            if (count > 3) {
-                System.out.println(player + " can take 1 to 3 matches");
-            } else if (count == 2) {
-                System.out.println(player + " can take 1 or 2 matches");
-            } else {
-                System.out.println(player + " can take only 1 match");
-            }
             int matches = Integer.parseInt(scanner.nextLine());
             if (matches >= 1 && matches <= Math.min(3, count)) {
                 count -= matches;
                 turn = !turn;
+            } else {
+                System.out.println("Wrong input");
             }
         }
         scanner.close();

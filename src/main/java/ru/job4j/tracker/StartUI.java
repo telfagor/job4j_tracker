@@ -16,7 +16,6 @@ public class StartUI {
                 Item item = new Item(name);
                 tracker.add(item);
                 System.out.println("Added item: " + item);
-                System.out.println("User entered: " + select);
             } else if (select == 6) {
                 run = false;
             }

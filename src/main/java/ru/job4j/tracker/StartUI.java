@@ -16,6 +16,16 @@ public class StartUI {
                 Item item = new Item(name);
                 tracker.add(item);
                 System.out.println("Added item: " + item);
+            } else if (select == 1) {
+                System.out.println("=== Show all items ===");
+                Item[] items = tracker.findAll();
+                if (items.length > 0) {
+                    for (Item i : items) {
+                        System.out.println(i);
+                    }
+                } else {
+                    System.out.println("The store does not contain tickets yet");
+                }
             } else if (select == 6) {
                 run = false;
             }

@@ -4,6 +4,6 @@ public class College {
     public static void main(String[] args) {
         StudentTwo andrei = new Freshman();
         Object o = andrei;
-        //Это называется up casting
+        System.out.println("Это называется up casting");
     }
 }
